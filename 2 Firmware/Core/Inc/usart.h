@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under BSD 3-Clause license,
@@ -31,26 +31,22 @@ extern "C" {
 
 /* USER CODE END Includes */
 
-extern UART_HandleTypeDef huart1;
+extern UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN Private defines */
 #define BUFFER_SIZE  128
 
-extern DMA_HandleTypeDef hdma_usart1_rx;
-extern DMA_HandleTypeDef hdma_usart1_tx;
+extern DMA_HandleTypeDef hdma_usart2_rx;
+extern DMA_HandleTypeDef hdma_usart2_tx;
 extern volatile uint8_t rxLen;
-extern volatile uint8_t recv_end_flag;
 extern uint8_t rx_buffer[BUFFER_SIZE];
-
-
 /* USER CODE END Private defines */
 
-void MX_USART1_UART_Init(void);
+void MX_USART2_UART_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 extern void (*OnRecvEnd)(uint8_t *data, uint16_t len);
 void Uart_SetRxCpltCallBack(void(*xerc)(uint8_t *, uint16_t));
-
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

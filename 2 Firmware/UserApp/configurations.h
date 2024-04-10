@@ -20,20 +20,6 @@ typedef struct Config_t
 {
     configStatus_t configStatus;
     uint32_t canNodeId;
-    int32_t encoderHomeOffset;
-    uint32_t defaultMode;
-    int32_t currentLimit;
-    int32_t velocityLimit;
-    int32_t velocityAcc;
-    int32_t calibrationCurrent;
-    int32_t dce_kp;
-    int32_t dce_kv;
-    int32_t dce_ki;
-    int32_t dce_kd;
-    float motor_temperature;
-    bool enableMotorOnBoot;
-    bool enableStallProtect;
-    bool enableTempWatch;
 } BoardConfig_t;
 
 extern BoardConfig_t boardConfig;
@@ -43,8 +29,7 @@ extern BoardConfig_t boardConfig;
 }
 /*---------------------------- C++ Scope ---------------------------*/
 
-#include <Platform/Memory/eeprom_interface.h>
-#include "Motor/motor.h"
+#include "Platform/Utils/Memory/eeprom_interface.h"
 
 
 #endif

@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under BSD 3-Clause license,
@@ -28,13 +28,7 @@ extern "C" {
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
-extern CAN_HandleTypeDef hcan;
-extern CAN_TxHeaderTypeDef TxHeader;
-extern CAN_RxHeaderTypeDef RxHeader;
-extern uint8_t TxData[8];
-extern uint8_t RxData[8];
-extern uint32_t TxMailbox;
-extern float motor_temperature;
+
 /* USER CODE END Includes */
 
 extern CAN_HandleTypeDef hcan;
@@ -46,7 +40,6 @@ extern CAN_HandleTypeDef hcan;
 void MX_CAN_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-void CAN_Send(CAN_TxHeaderTypeDef* pHeader, uint8_t* data);
 
 /* USER CODE END Prototypes */
 

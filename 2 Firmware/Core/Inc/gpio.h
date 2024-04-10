@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under BSD 3-Clause license,
@@ -38,41 +38,6 @@ extern "C" {
 void MX_GPIO_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-
-/********** Button **********/
-/********** Button **********/
-/********** Button **********/
-void REIN_GPIO_Button_Init(void);  	 //GPIO初始�??(Button)
-
-/********** HwElec **********/
-/********** HwElec **********/
-/********** HwElec **********/
-void REIN_GPIO_HwElec_Init(void);   	//GPIO初始�??(HwElec)
-
-/********** MT6816Base **********/
-/********** MT6816Base **********/
-/********** MT6816Base **********/
-void REIN_GPIO_MT6816_ABZ_Init(void);  //GPIO初始�??(MT6816_ABZ)
-void REIN_GPIO_MT6816_SPI_Init(void);  //GPIO初始�??(MT6916_SPI)
-
-/********** Modbus **********/
-/********** Modbus **********/
-/********** Modbus **********/
-void REIN_GPIO_Modbus_Init(void);			//GPIO初始�??(Modbus)
-
-/********** OLED **********/
-/********** OLED **********/
-/********** OLED **********/
-void REIN_GPIO_OLED_Init(void);			 //GPIO初始�??(OLED)
-
-/********** SIGNAL **********/
-/********** SIGNAL **********/
-/********** SIGNAL **********/
-void REIN_GPIO_SIGNAL_COUNT_Init(void);		//GPIO初始�??(SIGNAL_COUNT)
-void REIN_GPIO_SIGNAL_COUNT_DeInit(void);	//GPIO清理(SIGNAL_COUNT)
-void REIN_GPIO_SIGNAL_PWM_Init(void);			//GPIO初始�??(SIGNAL_PWM)
-void REIN_GPIO_SIGNAL_PWM_DeInit(void);		//GPIO清理(SIGNAL_PWM)
-
 
 /* USER CODE END Prototypes */
 
